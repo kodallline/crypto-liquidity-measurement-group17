@@ -1,0 +1,46 @@
+{
+  "scope": "Seven selected first-of-month days of 2019",
+  "seed": 20261016,
+  "bootstrap_repetitions": 999,
+  "bootstrap_unit": "UTC date; same draws across markets; ranks recomputed",
+  "train_dates": [
+    "2019-06-01",
+    "2019-07-01",
+    "2019-08-01",
+    "2019-09-01",
+    "2019-10-01"
+  ],
+  "test_dates": [
+    "2019-11-01",
+    "2019-12-01"
+  ],
+  "eligible_hours": 807,
+  "ordinary_comparisons": 192,
+  "partial_intervals": 192,
+  "regime_comparisons": 1152,
+  "direct_level_comparisons": 144,
+  "calibrations": 192,
+  "test_comparisons": 360,
+  "calibration": "One train-standardized proxy, intercept, OLS; no test-based model selection",
+  "nonnegative_targets": [
+    "qs_bp",
+    "es_bp",
+    "crt25_bp"
+  ],
+  "multiple_testing_adjustment": "None; intervals are preliminary individual intervals",
+  "input_sha256": {
+    "minute_local_only.csv": "3af7597075caa8cc2b0767d6fa9c4e34df9b02733d1b23442fb31289e9c40503",
+    "hourly_local_only.csv": "4584e20ddda3e5be7fdcf58ae315721c2b9bc3dd32c96a642725c6e69d9dbab7",
+    "hourly_proxies_local_only.csv": "148c761293b3f94b17a1e108027a1253d8bef616fe0ffe7896612f9b01cb9dc9",
+    "hourly_benchmarks_local_only.csv": "ebf674da6a5969b21d4169dceab4795a587a1c3599b587ca6fe3f53c23d2cf7b",
+    "hourly_benchmarks_age30_local_only.csv": "e44d80020d387fdafbc2f6741c3a6efe1e34accfdd715454eb088848004fe07d",
+    "participant3_qa_summary.csv": "3faa8fe111ac46847b335a8877427c4eecd54046600d242e58839fdb28d34b2d",
+    "qa_summary.json": "7762c6d90fbefd9d934d8c5f96d84e2d32f91a23df3a790520ee2b9abf9db518"
+  },
+  "versions": {
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.2"
+  }
+}
